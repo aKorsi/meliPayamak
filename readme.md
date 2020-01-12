@@ -1,6 +1,6 @@
 <div dir="rtl">
 
-# سورس اتصال به سامانه پیامکی [ملی پیامک](https://www.melipayamak.com/) 
+# کتابخانه اتصال به سامانه پیامکی [ملی پیامک](https://www.melipayamak.com/) 
 
 روش استفاده:
 
@@ -22,5 +22,13 @@ resp,err := mpService.SendByBaseNumber(text, to, bodyId)
 </div>
 
 در صورت خطا یا مشکلی حتما اعلام بفرمایید 
+
+<div dir="ltr">
+
+`github.com/clbanning/mxj`
+
+**{Decode / encode XML to/from map[string]interface{} (or JSON);}**
+
+</div>
 
 </div>
