@@ -114,10 +114,10 @@ func (s *RestService) GetMessages(location int, from string, index string, count
 	return res, err
 }
 
-func (s *RestService) GetCredit(username string, password string) (Response, error) {
+func (s *RestService) GetCredit() (Response, error) {
 	jsonData := map[string]string{
-		"UserName": username,
-		"PassWord": password,
+		"UserName": s.UserName,
+		"PassWord": s.PassWord,
 	}
 	res := Response{}
 	data, err := s.makeRequest(jsonData, "GetCredit")
@@ -131,10 +131,10 @@ func (s *RestService) GetCredit(username string, password string) (Response, err
 	return res, err
 }
 
-func (s *RestService) GetBasePrice(username string, password string) (Response, error) {
+func (s *RestService) GetBasePrice() (Response, error) {
 	jsonData := map[string]string{
-		"UserName": username,
-		"PassWord": password,
+		"UserName": s.UserName,
+		"PassWord": s.PassWord,
 	}
 	res := Response{}
 	data, err := s.makeRequest(jsonData, "GetBasePrice")
@@ -148,10 +148,10 @@ func (s *RestService) GetBasePrice(username string, password string) (Response, 
 	return res, err
 }
 
-func (s *RestService) GetUserNumbers(username string, password string) (Response, error) {
+func (s *RestService) GetUserNumbers() (Response, error) {
 	jsonData := map[string]string{
-		"UserName": username,
-		"PassWord": password,
+		"UserName": s.UserName,
+		"PassWord": s.PassWord,
 	}
 	res := Response{}
 	data, err := s.makeRequest(jsonData, "GetUserNumbers")
