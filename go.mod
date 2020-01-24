@@ -1,4 +1,4 @@
-module akorsi/meliPayamak
+module github.com/aKorsi/meliPayamak
 
 go 1.13
 
